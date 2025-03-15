@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="64" height="64">
+  <rect x="2" y="2" width="28" height="28" rx="5" fill="#07070c" stroke="#c9a227" stroke-width="2" />
+  <text
+    x="16"
+    y="23"
+    font-family="Georgia, 'Times New Roman', serif"
+    font-size="22"
+    font-weight="bold"
+    fill="#e8b84b"
+    text-anchor="middle"
+  >Y</text>
+</svg>
