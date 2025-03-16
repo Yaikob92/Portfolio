@@ -15,7 +15,7 @@ const STATS = [
 export default function About() {
   return (
     <section id="about" className="section-pad bg-[var(--bg-soft)]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6">
         {/* Section header */}
         <motion.div
           variants={stagger}

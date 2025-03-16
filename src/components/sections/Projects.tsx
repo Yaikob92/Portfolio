@@ -11,7 +11,7 @@ export default function Projects() {
 
   return (
     <section id="projects" className="section-pad bg-[var(--bg-soft)]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6">
         <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={VIEWPORT} className="flex items-center justify-between mb-20">
           <div className="flex items-center gap-4">
             <motion.span variants={fadeUp} className="section-number">03 — Projects</motion.span>

@@ -47,10 +47,10 @@ export default function Navbar() {
           }`}
         style={scrolled ? { backgroundColor: "color-mix(in srgb, var(--bg) 90%, transparent)", borderColor: "var(--ivory-20)" } : undefined}
       >
-        <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
+        <div className="max-w-[1440px] mx-auto px-6 flex items-center justify-between">
           {/* Logo */}
           <a
-            href="#"
+            href="#hero"
             className="text-xl font-light tracking-widest hover-underline"
             style={{ fontFamily: "var(--font-display)", color: "var(--ivory)" }}
           >

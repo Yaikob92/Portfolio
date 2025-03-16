@@ -25,7 +25,7 @@ export default function Contact() {
       />
 
       {/* Section Label — left-aligned, full width */}
-      <div className="max-w-7xl mx-auto px-6 relative z-10">
+      <div className="max-w-[1440px] mx-auto px-6 relative z-10">
         <motion.div
           variants={stagger}
           initial="hidden"

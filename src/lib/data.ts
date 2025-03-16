@@ -55,29 +55,29 @@ export const PROJECTS = [
   },
   {
     id: "02",
-    title: "EtoPay — Fintech Payment Gateway",
+    title: "Et-Pulse — Telegram News Aggregator",
     description:
-      "A modern Ethiopian payment gateway landing page with culturally resonant 3D illustrations, smooth micro-interactions, and a conversion-focused design system.",
+      "A real-time news aggregation platform that scrapes and curates content from public Telegram channels, delivering organized Ethiopian news in a clean, searchable interface.",
     longDescription:
-      "Designed and built a high-fidelity fintech landing page tailored to the Ethiopian market. Blended modern fintech aesthetics with subtle cultural motifs. Custom 3D hero illustration, animated feature reveals, and mobile-first responsive layout.",
-    tech: ["Next.js", "TypeScript", "Framer Motion", "Tailwind CSS"],
-    type: "Fintech / Landing Page",
-    status: "Shipped",
+      "Built a full-stack web application that scrapes public Telegram channels for news content, processes and categorizes articles, and presents them through an intuitive frontend. Features include real-time content updates, channel management, search and filtering, and a responsive reading experience.",
+    tech: ["React", "TypeScript", "Node.js", "Telegram API", "Tailwind CSS"],
+    type: "News Aggregator",
+    status: "Production",
     year: "2025",
-    github: "https://github.com/Yaikob92",
+    github: "https://github.com/Yaikob92/Et-Pulse-frontend",
   },
   {
     id: "03",
-    title: "Go REST API — Auth & Swagger",
+    title: "Go Authentication & Authorization",
     description:
-      "A production-grade Go backend service implementing JWT authentication, token refresh flows, session management, and complete Swagger API documentation.",
+      "A secure backend service built in Go implementing JWT-based authentication and role-based authorization, designed for production-grade API security.",
     longDescription:
-      "Built a robust authentication service in Go featuring secure JWT issuance and revocation, refresh token rotation, middleware guards, and full OpenAPI/Swagger documentation for interactive testing.",
-    tech: ["Go", "Gin", "JWT", "PostgreSQL", "Swagger", "Docker"],
+      "Engineered a standalone authentication and authorization backend using Go and the Gin framework. Features include JWT token issuance, refresh token rotation, middleware-based route protection, role-based access control, and secure password hashing — built as a reusable auth foundation for any Go project.",
+    tech: ["Go", "Gin", "JWT", "PostgreSQL", "Docker"],
     type: "Backend Service",
     status: "Production",
     year: "2025",
-    github: "https://github.com/Yaikob92",
+    github: "https://github.com/Yaikob92/jwt-Authentication",
   },
   {
     id: "04",
@@ -101,7 +101,7 @@ export const EXPERIENCE = [
     period: "2024 — Present",
     description:
       "Building production SaaS platforms, fintech interfaces, and scalable backend systems for clients and personal ventures. End-to-end ownership from architecture to deployment.",
-    highlights: ["AACP SaaS Platform", "EtoPay Fintech", "Go Authentication API"],
+    highlights: ["AACP SaaS Platform", "Et-Pulse News Aggregator", "Go Authentication API"],
   },
   {
     role: "Mobile Application Developer",
@@ -113,25 +113,3 @@ export const EXPERIENCE = [
   },
 ];
 
-export const PROCESS_STEPS = [
-  {
-    number: "01",
-    title: "Understand",
-    description: "Deep-dive into the problem space. Who uses this? What do they need? What does success feel like?",
-  },
-  {
-    number: "02",
-    title: "Architect",
-    description: "Design the system before the pixels. Clean data flow, sensible abstractions, and scalable structure.",
-  },
-  {
-    number: "03",
-    title: "Build",
-    description: "Write production-quality code with attention to edge cases, performance, and developer experience.",
-  },
-  {
-    number: "04",
-    title: "Refine",
-    description: "Polish until the interaction feels inevitable. Every hover state, transition, and detail matters.",
-  },
-];

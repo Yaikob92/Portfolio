@@ -12,19 +12,19 @@ export default function Hero() {
       style={{ backgroundColor: "var(--bg)" }}
     >
       {/* Giant Background Text */}
-      <div className="absolute right-0 top-1/2 -translate-y-1/2 pointer-events-none select-none overflow-hidden flex justify-end w-full z-0">
+      <div className="absolute right-20 top-1/2 -translate-y-1/2 pointer-events-none select-none overflow-hidden flex justify-end w-full z-0">
         <motion.span
           initial={{ opacity: 0, x: 100 }}
-          animate={{ opacity: 0.04, x: 0 }}
+          animate={{ opacity: 0.025, x: 0 }}
           transition={{ duration: 1.5, ease: "easeOut" }}
-          className="text-[clamp(15rem,40vw,45rem)] font-black leading-none tracking-tighter mr-[-2vw]"
+          className="text-[clamp(15rem,30vw,40rem)] font-black leading-none tracking-tighter mr-[vw]"
           style={{ fontFamily: "var(--font-display)", color: "var(--ivory)" }}
         >
           YW
         </motion.span>
       </div>
 
-      <div className="max-w-7xl mx-auto px-6 md:px-12 w-full relative z-10 pt-20">
+      <div className="max-w-[1440px] mx-auto px-6 md:px-12 w-full relative z-10 pt-20">
         <div className="max-w-3xl">
           {/* Top Badge */}
           <motion.div
@@ -136,7 +136,7 @@ export default function Hero() {
           >
             <div className="flex flex-col gap-1">
               <div className="text-3xl font-bold text-gold leading-none">
-                4<span className="text-2xl">+</span>
+                3<span className="text-2xl">+</span>
               </div>
               <div className="text-[10px] sm:text-xs font-medium tracking-wide" style={{ color: "var(--ivory-40)" }}>Years exp.</div>
             </div>

@@ -7,7 +7,7 @@ import { fadeUp, stagger, VIEWPORT } from "@/lib/animations";
 export default function Skills() {
   return (
     <section id="skills" className="section-pad bg-[var(--bg)]">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-[1440px] mx-auto px-6">
         {/* Section header */}
         <motion.div
           variants={stagger}
