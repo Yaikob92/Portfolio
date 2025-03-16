@@ -3,143 +3,144 @@
 import { motion } from "framer-motion";
 import { GithubIcon, LinkedInIcon, TelegramIcon, LeetCodeIcon } from "@/components/ui/Icons";
 import { PERSONAL } from "@/lib/data";
-import { fadeUp, stagger, VIEWPORT } from "@/lib/animations";
+import { fadeUp, stagger, fadeLeft, VIEWPORT } from "@/lib/animations";
+
+const SOCIALS = [
+  { label: "GitHub", href: "https://github.com/Yaikob92", icon: GithubIcon },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/yaikob/", icon: LinkedInIcon },
+  { label: "Telegram", href: "https://t.me/An_n_em", icon: TelegramIcon },
+  { label: "LeetCode", href: "https://leetcode.com/Yaikob92", icon: LeetCodeIcon },
+];
 
 export default function Contact() {
   return (
-    <section id="contact" className="section-pad bg-[var(--bg)] relative overflow-hidden">
-      {/* Background radial highlight */}
-      <div 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full opacity-[0.02] pointer-events-none select-none"
+    <section id="contact" className="relative overflow-hidden" style={{ backgroundColor: "var(--bg)", paddingTop: "6rem", paddingBottom: "6rem" }}>
+
+      {/* Warm ambient glow top-center */}
+      <div
+        className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] pointer-events-none select-none"
         style={{
-          background: "radial-gradient(circle, var(--gold-warm) 0%, transparent 70%)"
+          background: "radial-gradient(ellipse at top, rgba(201,162,39,0.06) 0%, transparent 70%)"
         }}
       />
 
+      {/* Section Label — left-aligned, full width */}
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        
-        {/* Section Header */}
-        <div className="relative mb-24 flex items-center">
-          {/* Huge background watermark "05" (matching section numbering layout) */}
-          <span 
-            className="absolute left-0 -top-8 text-[9rem] md:text-[12rem] font-bold leading-none select-none pointer-events-none opacity-[0.02] tracking-tighter"
-            style={{ fontFamily: "var(--font-body)", color: "var(--ivory)" }}
-          >
-            05
-          </span>
-          <div className="relative z-10 flex items-center w-full gap-4">
-            <span 
-              className="text-[0.7rem] tracking-[0.25em] uppercase font-mono text-[var(--gold)]"
-            >
-              Contact
-            </span>
-            <div className="flex-1 h-px bg-[rgba(240,236,226,0.08)]" />
-          </div>
-        </div>
-
-        {/* Centered Main Content */}
-        <motion.div 
+        <motion.div
           variants={stagger}
           initial="hidden"
           whileInView="visible"
           viewport={VIEWPORT}
-          className="flex flex-col items-center justify-center text-center max-w-4xl mx-auto pt-8 pb-16"
+          className="flex items-center gap-4 mb-20"
         >
-          {/* Heading */}
-          <motion.h2 
-            variants={fadeUp}
-            className="text-[clamp(2.5rem,6vw,4.5rem)] font-light leading-[1.1] tracking-[-0.02em] text-ivory mb-6"
-            style={{ fontFamily: "var(--font-display)" }}
+          <motion.span variants={fadeLeft} className="section-number">
+            05 — Contact
+          </motion.span>
+          <motion.div variants={fadeLeft} className="gold-line" />
+        </motion.div>
+      </div>
+
+      {/* Centered main content */}
+      <div className="max-w-3xl mx-auto px-6 relative z-10 flex flex-col items-center text-center">
+
+        {/* Heading */}
+        <motion.h2
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={VIEWPORT}
+          className="font-bold leading-[1.05] tracking-[-0.03em] mb-8"
+          style={{
+            fontFamily: "var(--font-display)",
+            color: "var(--ivory)",
+            fontSize: "clamp(3rem, 8vw, 5.5rem)",
+          }}
+        >
+          Let&apos;s build<br />something great.
+        </motion.h2>
+
+        {/* Subtext */}
+        <motion.p
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={VIEWPORT}
+          className="text-sm leading-relaxed max-w-sm mx-auto mb-14"
+          style={{ color: "var(--ivory-55)", fontFamily: "var(--font-body)" }}
+        >
+          Open to new opportunities and collaborations. Whether you have a project in mind or just want to say hi — my inbox is open.
+        </motion.p>
+
+        {/* Email */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="visible"
+          viewport={VIEWPORT}
+          className="mb-14"
+        >
+          <a
+            href={`mailto:${PERSONAL.email}`}
+            className="group relative inline-flex items-center gap-2 pb-1 transition-all duration-300"
+            style={{
+              color: "var(--gold)",
+              fontFamily: "var(--font-body)",
+              fontSize: "clamp(1rem, 2.5vw, 1.4rem)",
+              fontWeight: 400,
+              letterSpacing: "0.01em",
+            }}
           >
-            Let&apos;s build<br />
-            <span style={{ color: "var(--ivory)" }}>something great.</span>
-          </motion.h2>
-
-          {/* Subheading text */}
-          <motion.p 
-            variants={fadeUp}
-            className="text-xs md:text-sm leading-relaxed max-w-xl mx-auto mb-10"
-            style={{ color: "var(--ivory-55)", fontFamily: "var(--font-body)" }}
-          >
-            Open to new opportunities and collaborations. Whether you have a project in mind or just want to say hi — my inbox is open.
-          </motion.p>
-
-          {/* Centered large Email Link */}
-          <motion.div variants={fadeUp} className="mb-20">
-            <a 
-              href={`mailto:${PERSONAL.email}`}
-              className="group relative inline-flex items-center gap-2 text-lg md:text-2xl font-light tracking-wide transition-all duration-300 pb-1 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
-              style={{ 
-                color: "var(--gold)", 
-                fontFamily: "var(--font-body)" 
-              }}
-            >
-              <span>{PERSONAL.email}</span>
-              <motion.span 
-                className="inline-block transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 text-sm md:text-lg"
-              >
-                ↗
-              </motion.span>
-              
-              {/* Expanding Underline */}
-              <span 
-                className="absolute bottom-0 left-0 w-full h-[1px] transition-transform duration-500 origin-left scale-x-100 group-hover:scale-x-105"
-                style={{ backgroundColor: "rgba(201, 162, 39, 0.4)" }}
-              />
-            </a>
-          </motion.div>
-
+            <span>{PERSONAL.email}</span>
+            <span className="text-base transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 opacity-70">↗</span>
+            {/* Underline */}
+            <span
+              className="absolute bottom-0 left-0 w-full h-[1px]"
+              style={{ backgroundColor: "rgba(201,162,39,0.35)" }}
+            />
+          </a>
         </motion.div>
 
-        {/* Separator line above footer socials */}
-        <div className="w-full max-w-3xl mx-auto h-px bg-[rgba(240,236,226,0.06)] mb-8" />
+        {/* Horizontal Separator */}
+        <motion.div
+          initial={{ scaleX: 0, opacity: 0 }}
+          whileInView={{ scaleX: 1, opacity: 1 }}
+          viewport={VIEWPORT}
+          transition={{ duration: 0.7, ease: "easeOut" }}
+          className="w-full h-px mb-10 origin-center"
+          style={{ backgroundColor: "var(--ivory-20)" }}
+        />
 
-        {/* Inline Centered Social Links */}
-        <div className="flex flex-wrap items-center justify-center gap-x-6 gap-y-4 text-[0.7rem] uppercase tracking-[0.2em] font-mono mb-6">
-          <a 
-            href="https://github.com/Yaikob92" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            <GithubIcon size={12} />
-            GitHub
-          </a>
-          <span className="opacity-[0.15]" style={{ color: "var(--ivory)" }}>·</span>
-          <a 
-            href="https://www.linkedin.com/in/yaikob/" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            <LinkedInIcon size={12} />
-            LinkedIn
-          </a>
-          <span className="opacity-[0.15]" style={{ color: "var(--ivory)" }}>·</span>
-          <a 
-            href="https://t.me/An_n_em" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            <TelegramIcon size={12} />
-            Telegram
-          </a>
-          <span className="opacity-[0.15]" style={{ color: "var(--ivory)" }}>·</span>
-          <a 
-            href="https://leetcode.com/Yaikob92" 
-            target="_blank" 
-            rel="noopener noreferrer" 
-            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
-            style={{ fontFamily: "var(--font-mono)" }}
-          >
-            <LeetCodeIcon size={12} />
-            LeetCode
-          </a>
-        </div>
+        {/* Social Links */}
+        <motion.div
+          variants={stagger}
+          initial="hidden"
+          whileInView="visible"
+          viewport={VIEWPORT}
+          className="flex flex-wrap items-center justify-center gap-8"
+        >
+          {SOCIALS.map(({ label, href, icon: Icon }) => (
+            <motion.a
+              key={label}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              variants={fadeUp}
+              className="flex items-center gap-2 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(201,162,39,0.7)]"
+              style={{
+                color: "var(--ivory-55)",
+                fontFamily: "var(--font-mono)",
+                fontSize: "0.72rem",
+                letterSpacing: "0.15em",
+                textTransform: "uppercase",
+              }}
+              onMouseEnter={(e) => (e.currentTarget.style.color = "var(--gold)")}
+              onMouseLeave={(e) => (e.currentTarget.style.color = "var(--ivory-55)")}
+            >
+              <Icon size={13} />
+              {label}
+            </motion.a>
+          ))}
+        </motion.div>
 
       </div>
     </section>

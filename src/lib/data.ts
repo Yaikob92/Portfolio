@@ -2,7 +2,7 @@ export const PERSONAL = {
   name: "Yaikob Wasihun",
   title: "Software Engineer",
   tagline: "Crafting digital experiences at the intersection of engineering and design.",
-  bio: `I’m a full-stack software engineer focused on building scalable backend systems, secure APIs, and resilient digital products for real-world production environments.\n\nMy primary focus is backend engineering — designing clean architectures, real-time systems, authentication flows, and high-performance services with strong attention to scalability, reliability, and developer experience.\n\nAlongside backend development, I build modern web and mobile applications using React, Next.js, and React Native, creating products that feel fast, polished, and production-ready.`,
+  bio: `I’m a software engineer focused on building scalable backend systems, secure APIs, and resilient digital products for real-world production environments.\n\nMy primary focus is backend engineering — designing clean architectures, real-time systems, authentication flows, and high-performance services with strong attention to scalability, reliability, and developer experience.\n\nAlongside backend development, I build mobile applications using React Native, Expo, and React Navigation creating products that feel fast, polished, and production-ready.`,
   location: "Addis Ababa, Ethiopia",
   email: "wyaikob@gmail.com",
   availability: "Open to opportunities",
@@ -17,7 +17,7 @@ export const SOCIAL_LINKS = [
 export const SKILLS = [
   {
     category: "Mobile Development",
-    items: ["React Native", "Expo", "TypeScript", "React Navigation", "NativeWind / Tailwind CSS", "Framer Motion (or Reanimated)", "REST APIs / GraphQL", "AsyncStorage / Secure Storage"],
+    items: ["React Native", "Expo", "TypeScript", "React Navigation", "NativeWind", "Framer Motion (or Reanimated)", "REST APIs / GraphQL", "AsyncStorage / Secure Storage"],
   },
   {
     category: "Backend",
@@ -104,12 +104,12 @@ export const EXPERIENCE = [
     highlights: ["AACP SaaS Platform", "EtoPay Fintech", "Go Authentication API"],
   },
   {
-    role: "Frontend Developer",
+    role: "Mobile Application Developer",
     company: "Self-Directed Projects",
     period: "2023 — 2024",
     description:
-      "Focused on mastering modern frontend engineering — React ecosystem, TypeScript, animation libraries, and design systems. Built multiple full-featured applications.",
-    highlights: ["Next.js App Router", "Framer Motion", "Component Architecture"],
+      "Focused on mastering modern mobile application development — React Native, Expo, TypeScript, animation libraries, and design systems. Built multiple full-featured applications.",
+    highlights: ["React Native App Router", "Framer Motion", "Component Architecture"],
   },
 ];
 

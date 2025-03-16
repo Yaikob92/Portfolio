@@ -4,15 +4,14 @@ import "./globals.css";
 import { ScrollProgress, CustomCursor } from "@/components/ui/ScrollProgress";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { ThemeProvider } from "@/lib/theme";
 
 export const metadata: Metadata = {
-  title: "Yaikob Wasihun — Software Engineer",
+  title: "Yaikob Wasihun | Software Engineer",
   description:
-    "Full-stack software engineer crafting fast, beautiful, and resilient digital products. Based in Addis Ababa, Ethiopia.",
+    "Software engineer crafting fast, beautiful, and resilient digital products. Based in Addis Ababa, Ethiopia.",
   keywords: [
     "software engineer",
-    "full-stack developer",
-    "Next.js",
     "React",
     "TypeScript",
     "Yaikob Wasihun",
@@ -20,9 +19,9 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "Yaikob Wasihun" }],
   openGraph: {
-    title: "Yaikob Wasihun — Software Engineer",
+    title: "Yaikob Wasihun | Software Engineer",
     description:
-      "Full-stack software engineer crafting fast, beautiful, and resilient digital products.",
+      "Software engineer crafting fast, beautiful, and resilient digital products.",
     type: "website",
   },
 };
@@ -44,23 +43,25 @@ export default function RootLayout({
         {/* Google Analytics */}
         <Script
           strategy="afterInteractive"
-          src={`https://www.googletagmanager.com/gtag/js?id=G-2BSSDH2EGP`}
+          src={`https://www.googletagmanager.com/gtag/js?id=G-J3CBXC0B5W`}
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', 'G-2BSSDH2EGP');
+            gtag('config', 'G-J3CBXC0B5W');
           `}
         </Script>
       </head>
-      <body className="bg-[#07070c] antialiased">
-        <ScrollProgress />
-        <CustomCursor />
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+      <body className="antialiased" style={{ backgroundColor: "var(--bg)", color: "var(--ivory-90)" }}>
+        <ThemeProvider>
+          <ScrollProgress />
+          <CustomCursor />
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

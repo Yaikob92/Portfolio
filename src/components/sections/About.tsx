@@ -48,7 +48,7 @@ export default function About() {
               <div className="absolute bottom-0 left-0 w-2.5 h-2.5 border-b border-l border-gold z-10" />
               <div className="absolute bottom-0 right-0 w-2.5 h-2.5 border-b border-r border-gold z-10" />
 
-              <div className="relative aspect-[4/5] overflow-hidden rounded-[1px] bg-[#07070c]">
+              <div className="relative aspect-[4/5] overflow-hidden rounded-[1px]" style={{ backgroundColor: "var(--bg)" }}>
                 <Image
                   src={portImage}
                   alt="Yaikob Wasihun"

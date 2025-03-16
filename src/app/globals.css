@@ -21,10 +21,42 @@
   --font-mono: "JetBrains Mono", monospace;
 }
 
-* {
+/* Light mode overrides */
+[data-theme="light"] {
+  --gold: #b8890f;
+  --gold-warm: #c99a20;
+  --gold-glow: #d4aa30;
+  --ivory: #1a1a2e;
+  --ivory-90: rgba(26, 26, 46, 0.9);
+  --ivory-55: rgba(26, 26, 46, 0.6);
+  --ivory-40: rgba(26, 26, 46, 0.45);
+  --ivory-20: rgba(26, 26, 46, 0.2);
+  --bg: #f5f3ee;
+  --bg-soft: #eceae4;
+  --bg-card: #e5e2da;
+}
+
+/* Universal smooth theme transition — runs on every element */
+*,
+*::before,
+*::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition:
+    background-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 0.4s cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Exception: don't slow down animations/transforms */
+.no-theme-transition,
+.no-theme-transition *,
+[data-framer-component-type],
+[data-framer-component-type] * {
+  transition-duration: 0s !important;
 }
 
 html {
@@ -104,7 +136,7 @@ body::before {
   background: var(--bg-card);
   border: 1px solid rgba(201, 162, 39, 0.12);
   border-radius: 2px;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
 .card-obsidian:hover {
   border-color: rgba(201, 162, 39, 0.3);
@@ -210,8 +242,8 @@ body::before {
   border: 1px solid rgba(201, 162, 39, 0.25);
   color: var(--ivory-55);
   border-radius: 1px;
-  background: rgba(17, 17, 32, 0.6);
-  transition: border-color 0.2s, color 0.2s;
+  background: var(--bg-card);
+  transition: border-color 0.2s, color 0.2s, background-color 0.3s ease;
 }
 .tag-pill:hover {
   border-color: var(--gold);

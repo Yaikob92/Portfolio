@@ -9,13 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gold: "#c9a227",
-        "gold-warm": "#e8b84b",
-        "gold-glow": "#ffca3a",
-        ivory: "#f0ece2",
-        bg: "#07070c",
-        "bg-soft": "#0d0d18",
-        "bg-card": "#111120",
+        gold: "var(--gold)",
+        "gold-warm": "var(--gold-warm)",
+        "gold-glow": "var(--gold-glow)",
+        ivory: "var(--ivory)",
+        bg: "var(--bg)",
+        "bg-soft": "var(--bg-soft)",
+        "bg-card": "var(--bg-card)",
       },
       fontFamily: {
         display: ["var(--font-display)", "serif"],
