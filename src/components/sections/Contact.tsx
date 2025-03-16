@@ -68,9 +68,9 @@ export default function Contact() {
           <motion.div variants={fadeUp} className="mb-20">
             <a 
               href={`mailto:${PERSONAL.email}`}
-              className="group relative inline-flex items-center gap-2 text-lg md:text-2xl font-light tracking-wide transition-all duration-300 pb-1"
+              className="group relative inline-flex items-center gap-2 text-lg md:text-2xl font-light tracking-wide transition-all duration-300 pb-1 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
               style={{ 
-                color: "#e55b3c", // Premium warm coral/terracotta color from the screenshot
+                color: "var(--gold)", 
                 fontFamily: "var(--font-body)" 
               }}
             >
@@ -84,7 +84,7 @@ export default function Contact() {
               {/* Expanding Underline */}
               <span 
                 className="absolute bottom-0 left-0 w-full h-[1px] transition-transform duration-500 origin-left scale-x-100 group-hover:scale-x-105"
-                style={{ backgroundColor: "rgba(229, 91, 60, 0.4)" }}
+                style={{ backgroundColor: "rgba(201, 162, 39, 0.4)" }}
               />
             </a>
           </motion.div>
@@ -100,8 +100,8 @@ export default function Contact() {
             href="https://github.com/Yaikob92" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 transition-all duration-300 hover:text-white"
-            style={{ color: "var(--ivory-40)", fontFamily: "var(--font-mono)" }}
+            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+            style={{ fontFamily: "var(--font-mono)" }}
           >
             <GithubIcon size={12} />
             GitHub
@@ -111,8 +111,8 @@ export default function Contact() {
             href="https://www.linkedin.com/in/yaikob/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 transition-all duration-300 hover:text-white"
-            style={{ color: "var(--ivory-40)", fontFamily: "var(--font-mono)" }}
+            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+            style={{ fontFamily: "var(--font-mono)" }}
           >
             <LinkedInIcon size={12} />
             LinkedIn
@@ -122,8 +122,8 @@ export default function Contact() {
             href="https://t.me/An_n_em" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 transition-all duration-300 hover:text-white"
-            style={{ color: "var(--ivory-40)", fontFamily: "var(--font-mono)" }}
+            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+            style={{ fontFamily: "var(--font-mono)" }}
           >
             <TelegramIcon size={12} />
             Telegram
@@ -133,8 +133,8 @@ export default function Contact() {
             href="https://leetcode.com/Yaikob92" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="flex items-center gap-2 transition-all duration-300 hover:text-white"
-            style={{ color: "var(--ivory-40)", fontFamily: "var(--font-mono)" }}
+            className="flex items-center gap-2 text-[var(--ivory-40)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+            style={{ fontFamily: "var(--font-mono)" }}
           >
             <LeetCodeIcon size={12} />
             LeetCode

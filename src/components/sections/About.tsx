@@ -94,14 +94,13 @@ export default function About() {
             viewport={VIEWPORT}
             className="lg:col-span-7 flex flex-col justify-center"
           >
-            <div className="border-l-[2px] border-[#e55b3c] pl-6 md:pl-10 py-2 md:-mt-24 lg:-mt-32">
+            <div className="border-l-[2px] border-gold pl-6 md:pl-10 py-2 md:-mt-24 lg:-mt-32">
               <h3
                 className="text-4xl md:text-5xl font-bold mb-8 tracking-tight leading-[1.15]"
                 style={{ color: "var(--ivory)", fontFamily: "var(--font-body)" }}
               >
-                Developer.<br />
-                Builder.<br />
-                Problem solver.
+                Software Engineer.<br />
+                Mobile App developer.
               </h3>
 
               <div>
@@ -120,8 +119,7 @@ export default function About() {
               <div className="flex flex-wrap items-center gap-4 mt-10 text-sm md:text-[0.95rem] tracking-wide" style={{ fontFamily: "var(--font-body)" }}>
                 <a
                   href={`mailto:${PERSONAL.email}`}
-                  className="transition-colors duration-300 hover:text-white"
-                  style={{ color: "#e55b3c" }}
+                  className="text-gold transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
                 >
                   {PERSONAL.email}
                 </a>
@@ -130,8 +128,7 @@ export default function About() {
                   href="https://github.com/Yaikob92"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-white"
-                  style={{ color: "var(--ivory-55)" }}
+                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
                 >
                   GitHub
                 </a>
@@ -140,8 +137,7 @@ export default function About() {
                   href="https://www.linkedin.com/in/yaikob/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-white"
-                  style={{ color: "var(--ivory-55)" }}
+                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
                 >
                   LinkedIn
                 </a>
@@ -150,8 +146,7 @@ export default function About() {
                   href="https://t.me/An_n_em"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="transition-colors duration-300 hover:text-white"
-                  style={{ color: "var(--ivory-55)" }}
+                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
                 >
                   Telegram
                 </a>

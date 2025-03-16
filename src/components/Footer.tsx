@@ -9,7 +9,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-[rgba(240,236,226,0.05)] bg-[#07070c]">
       <div className="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between gap-4">
-        
+
         {/* Left Side: Brand and Copyright */}
         <motion.div
           initial={{ opacity: 0 }}
@@ -41,7 +41,7 @@ export default function Footer() {
             <ArrowUpIcon size={12} />
           </button>
         </motion.div>
-        
+
       </div>
     </footer>
   );

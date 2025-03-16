@@ -16,8 +16,8 @@ export const SOCIAL_LINKS = [
 
 export const SKILLS = [
   {
-    category: "Frontend",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Framer Motion", "HTML5", "CSS3"],
+    category: "Mobile Development",
+    items: ["React Native", "Expo", "TypeScript", "React Navigation", "NativeWind / Tailwind CSS", "Framer Motion (or Reanimated)", "REST APIs / GraphQL", "AsyncStorage / Secure Storage"],
   },
   {
     category: "Backend",
