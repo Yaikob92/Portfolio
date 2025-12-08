@@ -57,7 +57,7 @@ const Projects = () => {
                             <p className="project-tech">React Native • Clerk • Expo • Convex </p>
                             <p className="project-desc">An interactive social media platform similar to Instagram, where users can share photos and videos, follow others, like and comment on posts, and engage in real-time social interactions.</p>
                             <div className="project-links">
-                                <a href="#" className="btn-sm" target="_blank" rel="noreferrer"><Github className="inline-block h-4 w-4 mr-1" /> Code</a>
+                                <a href="https://github.com/Yaikob92/SPOTLIGHT-APP" className="btn-sm" target="_blank" rel="noreferrer"><Github className="inline-block h-4 w-4 mr-1" /> Code</a>
                             </div>
                         </div>
                     </div>
