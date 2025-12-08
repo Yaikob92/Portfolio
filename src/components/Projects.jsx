@@ -1,8 +1,8 @@
 import React from 'react';
 import { Github } from "lucide-react";
-import bookWormImg from '../assets/bookWorm.png';
-import twitterImg from '../assets/twitter.png';
-import instagramImg from '../assets/instagram.png';
+import bookWormImg from '../assets/bookWorm_new.png';
+import twitterImg from '../assets/twitter_new.png';
+import instagramImg from '../assets/instagram_new.png';
 
 const Projects = () => {
     return (

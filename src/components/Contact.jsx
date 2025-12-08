@@ -124,13 +124,13 @@ const Contact = () => {
                                         <label htmlFor="name" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                                             Name
                                         </label>
-                                        <Input id="name" name="user_name" placeholder="John Doe" required disabled={isSubmitting} />
+                                        <Input id="name" name="name" placeholder="John Doe" required disabled={isSubmitting} />
                                     </div>
                                     <div className="space-y-2">
                                         <label htmlFor="email" className="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70">
                                             Email
                                         </label>
-                                        <Input id="email" name="user_email" type="email" placeholder="john@example.com" required disabled={isSubmitting} />
+                                        <Input id="email" name="email" type="email" placeholder="john@example.com" required disabled={isSubmitting} />
                                     </div>
                                 </div>
                                 <div className="space-y-2">
