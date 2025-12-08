@@ -1,5 +1,6 @@
 import React from 'react';
-import { BarChart, LineChart } from "lucide-react";
+import { BarChart, LineChart, ExternalLink } from "lucide-react";
+import dataAnalyticsCert from '../assets/data-analytics-certificate.png';
 
 const Certificates = () => {
     const certificates = [
@@ -16,7 +17,7 @@ const Certificates = () => {
             title: "ALX Data Analytics",
             issuer: "ALX Africa",
             date: "2024",
-            link: "#", // Placeholder or actual link if available
+            link: dataAnalyticsCert,
             icon: LineChart
         }
     ];
@@ -35,6 +36,11 @@ const Certificates = () => {
                                 <h3>{cert.title}</h3>
                                 <p className="issuer">{cert.issuer}</p>
                                 <span className="date">{cert.date}</span>
+                                {cert.link && cert.link !== "#" && (
+                                    <a href={cert.link} target="_blank" rel="noopener noreferrer" className="view-cert-link">
+                                        View Certificate <ExternalLink className="inline-block h-3 w-3 ml-1" />
+                                    </a>
+                                )}
                             </div>
                         </div>
                     ))}

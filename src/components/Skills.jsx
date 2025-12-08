@@ -16,12 +16,12 @@ const skills = [
     {
         icon: Database,
         label: "Databases",
-        items: ["PostgreSQL", "MongoDB", "MySQL", "Query optimization basics"],
+        items: ["PostgreSQL", "MongoDB", "MySQL",],
     },
     {
         icon: GitBranch,
         label: "Tools & Workflow",
-        items: ["Git & GitHub", "Linux (Ubuntu)", "CLI-first workflow"],
+        items: ["Git & GitHub", "Linux (Ubuntu)"],
     },
 ];
 
