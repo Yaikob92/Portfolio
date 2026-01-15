@@ -17,11 +17,11 @@ export const SOCIAL_LINKS = [
 export const SKILLS = [
   {
     category: "Mobile Development",
-    items: ["React Native", "Expo", "TypeScript", "React Navigation", "NativeWind", "Framer Motion (or Reanimated)", "REST APIs / GraphQL", "AsyncStorage / Secure Storage"],
+    items: ["React Native", "Expo", "TypeScript", "React Navigation", "NativeWind", "REST APIs"],
   },
   {
     category: "Backend",
-    items: ["Node.js", "Express", "Go", "REST APIs", "GraphQL", "WebSockets"],
+    items: ["Node.js", "Express", "Go", "REST APIs", "WebSockets"],
   },
   {
     category: "Database",
@@ -104,12 +104,31 @@ export const EXPERIENCE = [
     highlights: ["AACP SaaS Platform", "Et-Pulse News Aggregator", "Go Authentication API"],
   },
   {
+    role: "Frontend Web Developer Intern",
+    company: "Jirtu Software Labs",
+    period: "2025",
+    description:
+      "Developed responsive and user-friendly web interfaces using React, built reusable UI components, and collaborated to deliver features.",
+    highlights: ["React", "UI Components", "Responsive Design"],
+  },
+  {
     role: "Mobile Application Developer",
     company: "Self-Directed Projects",
     period: "2023 — 2024",
     description:
       "Focused on mastering modern mobile application development — React Native, Expo, TypeScript, animation libraries, and design systems. Built multiple full-featured applications.",
     highlights: ["React Native App Router", "Framer Motion", "Component Architecture"],
+  },
+];
+
+export const EDUCATION = [
+  {
+    role: "Bachelor of Science in Computer Science and Engineering",
+    company: "Adama Science and Technology University (ASTU)",
+    period: "2021 — 2026",
+    location: "Adama, Ethiopia",
+    description:
+      "Graduated with a degree in Computer Science, gaining strong foundations in software engineering, algorithms, databases, computer networks, operating systems, and modern software development practices through coursework and hands-on projects.",
   },
 ];
 

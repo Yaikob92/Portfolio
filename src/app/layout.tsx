@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import "./globals.css";
-import { ScrollProgress, CustomCursor } from "@/components/ui/ScrollProgress";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import { ThemeProvider } from "@/lib/theme";
 
 export const metadata: Metadata = {
@@ -56,11 +53,7 @@ export default function RootLayout({
       </head>
       <body className="antialiased" style={{ backgroundColor: "var(--bg)", color: "var(--ivory-90)" }}>
         <ThemeProvider>
-          <ScrollProgress />
-          <CustomCursor />
-          <Navbar />
-          <main>{children}</main>
-          <Footer />
+          {children}
         </ThemeProvider>
       </body>
     </html>

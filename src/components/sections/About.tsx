@@ -53,6 +53,7 @@ export default function About() {
                   src={portImage}
                   alt="Yaikob Wasihun"
                   fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 40vw, 500px"
                   className="object-cover transition-transform duration-700 ease-out group-hover:scale-105"
                   placeholder="blur"
                 />
