@@ -1,39 +1,39 @@
-@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300;1,9..40,400&family=JetBrains+Mono:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=JetBrains+Mono:wght@300;400;500&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-  --gold: #c9a227;
-  --gold-warm: #e8b84b;
-  --gold-glow: #ffca3a;
-  --ivory: #f0ece2;
-  --ivory-90: rgba(240, 236, 226, 0.9);
-  --ivory-55: rgba(240, 236, 226, 0.55);
-  --ivory-40: rgba(240, 236, 226, 0.4);
-  --ivory-20: rgba(240, 236, 226, 0.2);
-  --bg: #07070c;
-  --bg-soft: #0d0d18;
-  --bg-card: #111120;
-  --font-display: "Cormorant Garamond", serif;
-  --font-body: "DM Sans", sans-serif;
+  --gold: #00d4ff;
+  --gold-warm: #3b82f6;
+  --gold-glow: #8b5cf6;
+  --ivory: #f1f5f9;
+  --ivory-90: rgba(241, 245, 249, 0.9);
+  --ivory-55: rgba(241, 245, 249, 0.55);
+  --ivory-40: rgba(241, 245, 249, 0.4);
+  --ivory-20: rgba(241, 245, 249, 0.2);
+  --bg: #030712;
+  --bg-soft: #0a0f1e;
+  --bg-card: #0f1629;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-body: "IBM Plex Sans", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
 }
 
 /* Light mode overrides */
 [data-theme="light"] {
-  --gold: #b8890f;
-  --gold-warm: #c99a20;
-  --gold-glow: #d4aa30;
+  --gold: #0099cc;
+  --gold-warm: #2563eb;
+  --gold-glow: #7c3aed;
   --ivory: #1a1a2e;
   --ivory-90: rgba(26, 26, 46, 0.9);
   --ivory-55: rgba(26, 26, 46, 0.6);
   --ivory-40: rgba(26, 26, 46, 0.45);
   --ivory-20: rgba(26, 26, 46, 0.2);
-  --bg: #f5f3ee;
-  --bg-soft: #eceae4;
-  --bg-card: #e5e2da;
+  --bg: #f0f4f8;
+  --bg-soft: #e2e8f0;
+  --bg-card: #cbd5e1;
 }
 
 /* Universal smooth theme transition — runs on every element */
@@ -90,9 +90,11 @@ body::before {
 ::-webkit-scrollbar {
   width: 2px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--gold);
   border-radius: 1px;
@@ -108,16 +110,34 @@ body::before {
 .font-display {
   font-family: var(--font-display);
 }
+
 .font-mono {
   font-family: var(--font-mono);
 }
 
-.text-ivory { color: var(--ivory); }
-.text-ivory-90 { color: var(--ivory-90); }
-.text-ivory-55 { color: var(--ivory-55); }
-.text-ivory-40 { color: var(--ivory-40); }
-.text-gold { color: var(--gold); }
-.text-gold-warm { color: var(--gold-warm); }
+.text-ivory {
+  color: var(--ivory);
+}
+
+.text-ivory-90 {
+  color: var(--ivory-90);
+}
+
+.text-ivory-55 {
+  color: var(--ivory-55);
+}
+
+.text-ivory-40 {
+  color: var(--ivory-40);
+}
+
+.text-gold {
+  color: var(--gold);
+}
+
+.text-gold-warm {
+  color: var(--gold-warm);
+}
 
 /* Section base */
 .section-pad {
@@ -134,13 +154,14 @@ body::before {
 /* Card */
 .card-obsidian {
   background: var(--bg-card);
-  border: 1px solid rgba(201, 162, 39, 0.12);
+  border: 1px solid rgba(0, 212, 255, 0.12);
   border-radius: 2px;
   transition: border-color 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
 }
+
 .card-obsidian:hover {
-  border-color: rgba(201, 162, 39, 0.3);
-  box-shadow: 0 0 30px rgba(201, 162, 39, 0.06);
+  border-color: rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.06);
 }
 
 /* Ambient orb */
@@ -155,6 +176,7 @@ body::before {
 .hover-underline {
   position: relative;
 }
+
 .hover-underline::after {
   content: "";
   position: absolute;
@@ -165,6 +187,7 @@ body::before {
   background: var(--gold-warm);
   transition: width 0.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
+
 .hover-underline:hover::after {
   width: 100%;
 }
@@ -174,13 +197,20 @@ body::before {
   overflow: hidden;
   white-space: nowrap;
 }
+
 .marquee-track {
   display: inline-flex;
   animation: marquee 30s linear infinite;
 }
+
 @keyframes marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
 }
 
 /* Focus visible */
@@ -212,11 +242,12 @@ body::before {
   transform: translate(-50%, -50%);
   transition: width 0.2s, height 0.2s, opacity 0.2s;
 }
+
 .cursor-ring {
   position: fixed;
   width: 36px;
   height: 36px;
-  border: 1px solid rgba(201, 162, 39, 0.5);
+  border: 1px solid rgba(0, 212, 255, 0.5);
   border-radius: 50%;
   pointer-events: none;
   z-index: 9996;
@@ -239,12 +270,13 @@ body::before {
   font-size: 0.68rem;
   letter-spacing: 0.05em;
   padding: 0.25rem 0.65rem;
-  border: 1px solid rgba(201, 162, 39, 0.25);
+  border: 1px solid rgba(0, 212, 255, 0.25);
   color: var(--ivory-55);
   border-radius: 1px;
   background: var(--bg-card);
   transition: border-color 0.2s, color 0.2s, background-color 0.3s ease;
 }
+
 .tag-pill:hover {
   border-color: var(--gold);
   color: var(--gold-warm);

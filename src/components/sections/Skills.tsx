@@ -57,7 +57,7 @@ export default function Skills() {
         </motion.div>
 
         {/* Marquee strip */}
-        <div className="border-t border-b border-[rgba(201,162,39,0.12)] py-5 overflow-hidden">
+        <div className="border-t border-b border-[rgba(0,212,255,0.12)] py-5 overflow-hidden">
           <div className="marquee-wrapper">
             <div className="marquee-track">
               {[...TECH_MARQUEE, ...TECH_MARQUEE].map((tech, i) => (

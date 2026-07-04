@@ -41,7 +41,7 @@ export default function About() {
             className="lg:col-span-5"
           >
             {/* Premium framed image container */}
-            <div className="relative group overflow-hidden border border-[rgba(201,162,39,0.15)] rounded-sm bg-gradient-to-b from-[rgba(201,162,39,0.03)] to-transparent p-2 transition-all duration-500 hover:border-[rgba(201,162,39,0.35)] hover:shadow-[0_0_40px_rgba(201,162,39,0.08)] mb-8">
+            <div className="relative group overflow-hidden border border-[rgba(0,212,255,0.15)] rounded-sm bg-gradient-to-b from-[rgba(0,212,255,0.03)] to-transparent p-2 transition-all duration-500 hover:border-[rgba(0,212,255,0.35)] hover:shadow-[0_0_40px_rgba(0,212,255,0.08)] mb-8">
               {/* Luxury gold corner accents */}
               <div className="absolute top-0 left-0 w-2.5 h-2.5 border-t border-l border-gold z-10" />
               <div className="absolute top-0 right-0 w-2.5 h-2.5 border-t border-r border-gold z-10" />
@@ -61,7 +61,7 @@ export default function About() {
             </div>
 
             {/* Stats row */}
-            <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-[rgba(201,162,39,0.12)]">
+            <div className="grid grid-cols-3 gap-4 mt-12 pt-12 border-t border-[rgba(0,212,255,0.12)]">
               {STATS.map((stat) => (
                 <div key={stat.label}>
                   <div
@@ -120,7 +120,7 @@ export default function About() {
               <div className="flex flex-wrap items-center gap-4 mt-10 text-sm md:text-[0.95rem] tracking-wide" style={{ fontFamily: "var(--font-body)" }}>
                 <a
                   href={`mailto:${PERSONAL.email}`}
-                  className="text-gold transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+                  className="text-gold transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.8)]"
                 >
                   {PERSONAL.email}
                 </a>
@@ -129,7 +129,7 @@ export default function About() {
                   href="https://github.com/Yaikob92"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.8)]"
                 >
                   GitHub
                 </a>
@@ -138,7 +138,7 @@ export default function About() {
                   href="https://www.linkedin.com/in/yaikob/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.8)]"
                 >
                   LinkedIn
                 </a>
@@ -147,7 +147,7 @@ export default function About() {
                   href="https://t.me/An_n_em"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(201,162,39,0.8)]"
+                  className="text-[var(--ivory-55)] transition-all duration-300 hover:text-gold hover:drop-shadow-[0_0_8px_rgba(0,212,255,0.8)]"
                 >
                   Telegram
                 </a>

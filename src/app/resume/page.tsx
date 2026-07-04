@@ -64,7 +64,7 @@ export default function ResumePage() {
         }
       `}</style>
 
-      <div className="min-h-screen bg-[#f5f3ee] text-neutral-800 flex flex-col font-[family:var(--font-body)] antialiased transition-none pb-12">
+      <div className="min-h-screen bg-[#f0f4f8] text-neutral-800 flex flex-col font-[family:var(--font-body)] antialiased transition-none pb-12">
         {/* Top Control Bar (Hidden on print) */}
         <header className="no-print w-full max-w-[820px] mx-auto pt-6 px-4 grid grid-cols-3 items-center z-10">
           <div className="justify-self-start">

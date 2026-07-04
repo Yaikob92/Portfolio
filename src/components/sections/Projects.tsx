@@ -25,7 +25,7 @@ export default function Projects() {
         <motion.div variants={stagger} initial="hidden" whileInView="visible" viewport={VIEWPORT}>
           {PROJECTS.map((project) => (
             <motion.div key={project.id} variants={fadeUp}>
-              <div className="border-t border-[rgba(201,162,39,0.12)] cursor-pointer group" onClick={() => setActiveId(activeId === project.id ? null : project.id)}>
+              <div className="border-t border-[rgba(0,212,255,0.12)] cursor-pointer group" onClick={() => setActiveId(activeId === project.id ? null : project.id)}>
                 <div className="flex items-start gap-6 py-8 transition-all duration-300 group-hover:pl-2">
                   <span className="text-[0.65rem] tracking-widest mt-1.5 shrink-0" style={{ color: "var(--ivory-40)", fontFamily: "var(--font-mono)" }}>
                     {project.id}
@@ -63,7 +63,7 @@ export default function Projects() {
                               </div>
                             </div>
                             <div>
-                              <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="inline-flex items-center gap-2 text-xs tracking-[0.1em] uppercase border border-[rgba(201,162,39,0.25)] px-4 py-2.5 transition-all hover:border-gold hover:text-gold-warm w-fit" style={{ color: "var(--ivory-55)", fontFamily: "var(--font-mono)" }}>
+                              <a href={project.github} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()} className="inline-flex items-center gap-2 text-xs tracking-[0.1em] uppercase border border-[rgba(0,212,255,0.25)] px-4 py-2.5 transition-all hover:border-gold hover:text-gold-warm w-fit" style={{ color: "var(--ivory-55)", fontFamily: "var(--font-mono)" }}>
                                 <GithubIcon size={13} />
                                 View Code
                               </a>
@@ -77,7 +77,7 @@ export default function Projects() {
               </div>
             </motion.div>
           ))}
-          <div className="border-t border-[rgba(201,162,39,0.12)]" />
+          <div className="border-t border-[rgba(0,212,255,0.12)]" />
         </motion.div>
       </div>
     </section>

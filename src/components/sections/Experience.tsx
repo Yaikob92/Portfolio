@@ -31,7 +31,7 @@ export default function Experience() {
             viewport={VIEWPORT}
             transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
             className="absolute left-0 md:left-[11rem] top-0 bottom-0 w-px origin-top hidden md:block"
-            style={{ background: "linear-gradient(to bottom, var(--gold), rgba(201,162,39,0.1))" }}
+            style={{ background: "linear-gradient(to bottom, var(--gold), rgba(0,212,255,0.1))" }}
           />
 
           <motion.div

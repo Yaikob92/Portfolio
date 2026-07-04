@@ -20,7 +20,7 @@ export default function Contact() {
       <div
         className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] pointer-events-none select-none"
         style={{
-          background: "radial-gradient(ellipse at top, rgba(201,162,39,0.06) 0%, transparent 70%)"
+          background: "radial-gradient(ellipse at top, rgba(0,212,255,0.06) 0%, transparent 70%)"
         }}
       />
 
@@ -95,7 +95,7 @@ export default function Contact() {
             {/* Underline */}
             <span
               className="absolute bottom-0 left-0 w-full h-[1px]"
-              style={{ backgroundColor: "rgba(201,162,39,0.35)" }}
+              style={{ backgroundColor: "rgba(0,212,255,0.35)" }}
             />
           </a>
         </motion.div>
@@ -125,7 +125,7 @@ export default function Contact() {
               target="_blank"
               rel="noopener noreferrer"
               variants={fadeUp}
-              className="flex items-center gap-2 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(201,162,39,0.7)]"
+              className="flex items-center gap-2 transition-all duration-300 hover:drop-shadow-[0_0_10px_rgba(0,212,255,0.7)]"
               style={{
                 color: "var(--ivory-55)",
                 fontFamily: "var(--font-mono)",
